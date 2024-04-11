@@ -1,3 +1,6 @@
+import GameContainer from "./_components/GameContainer";
+import "./_css/globals.css"
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return <GameContainer />;
 }
