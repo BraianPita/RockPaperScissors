@@ -1,0 +1,28 @@
+
+
+.reflection {
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 100%;
+    position: relative;
+    top: -50%;
+    left: -100%;
+    background-color: #FFF;
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  &:hover {
+    &::after {
+      animation: reflect;
+      animation-duration: 1s;
+      animation-delay: 0s;
+    }
+  }
+}
+@keyframes reflect {
+  0% { transform: scale(0) rotate(45deg); opacity: 0.0; }
+  5% { transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { transform: scale(100) rotate(45deg); opacity: 0; }
+}

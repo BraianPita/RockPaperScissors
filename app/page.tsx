@@ -1,5 +1,5 @@
 import GameContainer from "./_components/GameContainer";
-import "./_css/globals.css"
+import "@styles/globals.scss"
 
 export default function Page() {
   return <GameContainer />;
